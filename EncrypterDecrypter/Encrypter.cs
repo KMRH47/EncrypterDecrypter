@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace EncrypterDecrypter
+﻿namespace EncrypterDecrypter
 {
     class Encrypter
     {
@@ -11,11 +7,7 @@ namespace EncrypterDecrypter
             string textEncrypted = "";
 
             for (int i = 0; i < text.Length; i++)
-            {
-                int letterInt = text[i] + 1;
-                char letter = (char)letterInt;
-                textEncrypted += letter.ToString();
-            }
+                textEncrypted += (char)(text[i] + 1);
 
             return textEncrypted;
         }
@@ -25,10 +17,7 @@ namespace EncrypterDecrypter
             string textDecrypted = "";
 
             for (int i = 0; i < text.Length; i++)
-            {
-                char letter = (char)(text[i] - 1);
-                textDecrypted += letter.ToString();
-            }
+                textDecrypted += (char)(text[i] - 1);
 
             return textDecrypted;
         }

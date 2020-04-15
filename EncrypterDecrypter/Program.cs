@@ -6,15 +6,11 @@ namespace EncrypterDecrypter
     {
         static void Main()
         {
-            bool debug = true;
+            string textEncrypted = Encrypter.Encrypt("Tester Bedster");
+            Console.WriteLine($"Text encrypted: {textEncrypted}");
 
-            string newText = Encrypter.Encrypt("He");
-            Console.WriteLine("Text encripted: {0}", newText);
-            string TextDescripted = Encrypter.Decrypt(newText);
-            Console.WriteLine("Text Decripted: {0}", TextDescripted);
-
-            if (debug)
-                Console.ReadLine();
+            string textDecrypted = Encrypter.Decrypt(textEncrypted);
+            Console.WriteLine($"Text decrypted: {textDecrypted}");
         }
     }
 }
