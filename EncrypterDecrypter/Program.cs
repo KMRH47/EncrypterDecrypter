@@ -6,7 +6,7 @@ namespace EncrypterDecrypter
     {
         static void Main()
         {
-            string textEncrypted = Encrypter.Encrypt("Tester Bedster");
+            string textEncrypted = Encrypter.Encrypt("hola");
             Console.WriteLine($"Text encrypted: {textEncrypted}");
 
             string textDecrypted = Encrypter.Decrypt(textEncrypted);
